@@ -17,7 +17,7 @@ a {
   font-family: "Raleway", sans-serif !important;
 }
 
-.button {
+/* .button {
   padding: 12px;
   border: 2px solid;
   border-radius: 3px;
@@ -25,7 +25,7 @@ a {
   -webkit-transition: all .3s;
   transition: all .3s;
   font-size: 16px;
-}
+} */
 
 /* Scrollbar */
 
@@ -36,7 +36,8 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
+  background: #333;
 }
 
 /* Handle */
@@ -78,24 +79,28 @@ a {
 /* H E A D E R */
 
 
-
 .navbar {
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  color: white;
+
+
+
 }
 
 .brand-title {
   font-size: 1.5rem;
-  margin: .5rem;
+  margin: .2rem;
 }
 
 .brand-pic {
-  width: 40px;
+  width: 30px;
   height: 30px;
-  border-radius: 30px;
+  border-radius: 50%;
 }
 
 .navbar-links ul {
@@ -117,8 +122,8 @@ a {
 
 }
 
-.navbar-links li:hover {
-  background: #11ABB0;
+.navbar-links li a:hover {
+  color: #11ABB0;
 }
 
 .toggle-button {
@@ -176,7 +181,8 @@ a {
 
 #header {
   min-height: 100vh;
-  background-image: url(/resources/Images/jpg.jpg);
+  /* background-image: url(/resources/Images/jpg.jpg); */
+  background-color: #333;
   background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -194,10 +200,10 @@ a {
 }
 
 #my-pic {
-  width: 110px;
-  height: 130px;
-  border: solid #11ABB0 0.1em;
-  border-radius: 50%;
+  width: 10vw;
+  /* height: 130px; */
+  /* border: solid #11ABB0 0.1em; */
+  /* border-radius: 50%; */
   cursor: pointer;
 
 }
@@ -217,6 +223,108 @@ a {
   font-weight: normal;
   color: #F5F5F5;
 }
+
+.text-box {
+  margin-top: 15%;
+  margin-left: 15%;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+
+.text-box h1 {
+  font-size: 75px;
+  line-height: 160px;
+  display: flex;
+
+}
+
+.text-box a {
+  /* margin-left: 30px; */
+  margin-top: -5px;
+  display: inline-block;
+  border-radius: 6px;
+  /* border: 2px solid #fff724; */
+  color: #11ABB0;
+  border: 2px solid #11ABB0;
+  padding: 10px 30px;
+  text-decoration: none;
+
+}
+
+.text-box a:hover {
+  color: #11ABB0;
+}
+
+
+
+.text-box .btn {
+  background: #11ABB0;
+  color: #000;
+  margin-left: 30px;
+  font-weight: 600;
+
+}
+
+.text-box .btn:hover {
+  color: black;
+}
+
+.user-img {
+  width: 450px;
+
+
+
+
+
+
+
+}
+
+span {
+  color: #11ABB0;
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    margin-left: auto;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    right: 10px;
+    top: 150px;
+    display: block;
+
+    margin: 50px;
+
+
+  }
+
+  .text-box h1 {
+    /* /* align-items: center; */
+    justify-content: center;
+    /* position: relative;
+    right: 5%;
+    top: 0px; */
+
+  }
+
+  .text-box a {
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .user-img {
+    display: none;
+
+
+
+  }
+}
+
+
+
+
 
 
 
@@ -265,7 +373,7 @@ a {
 }
 
 #cv hr {
-  height: 1px;
+  height: 3px;
   border: none;
   background: #DDD;
   margin: 50px auto;
@@ -345,9 +453,11 @@ a {
 
 #projects {
   color: black;
-  padding-left: 0px;
-  padding-top: 10px;
+  /* padding-left: 0px;
+  padding-top: 0px; */
+  /* padding-bottom: 10px; */
   /* font-size: larger; */
+
 
 }
 
@@ -363,7 +473,9 @@ a {
   width: 22vw;
   height: 28px;
   font-size: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
   padding-left: 0px;
   margin-top: 10px;
   color: #11ABB0;
@@ -460,6 +572,28 @@ a {
 }
 
 
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 50.5%;
+  left: 92.25%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: rgb(100, 100, 100);
+  padding: .5px;
+  border-radius: 4px;
+
+}
+
+/*On Hover Color Change*/
+#myBtn:hover {
+  background-color: #7dbbf1;
+}
+
+
 
 
 
@@ -535,7 +669,7 @@ a {
 textarea {
   text-align: left;
   background: transparent !important;
-  border-width: 0 0 1px 0 !important;
+  /* border-width: 0 0 1px 0 !important; */
   border-color: #DDD;
   display: block;
   width: 100%;
@@ -605,7 +739,7 @@ textarea:focus~.focus-border {
   -webkit-transition: .4s ease all;
   transition: .4s ease all;
   position: absolute;
-  top: 25px !important;
+  top: -11px !important;
   color: #AAA;
   text-align: left;
   font-size: 16px;
@@ -614,14 +748,16 @@ textarea:focus~.focus-border {
   font-family: "Raleway", sans-serif;
 }
 
-input:focus~.label,
+/* input:focus~.label,
 textarea:focus~.label[for=message],
 input.has-value~.label,
 textarea.has-value~.label[for=message] {
-  font-size: 12px !important;
+  font-size: 16px !important;
   top: 0px !important;
   color: #11ABB0 !important;
-}
+  position: absolute;
+  top: 25px !important; */
+
 
 
 .input-info {

@@ -8,7 +8,13 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
+
+
   <link rel="stylesheet" href="resources/CSS/index.css">
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -17,7 +23,7 @@
 </head>
 
 <body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
-  <nav class="navbar">
+  <nav class="navbar" style="position: fixed;">
     <div class="brand-title"><img class="brand-pic" src="./resources/Images/M.jpg">
 
     </div>
@@ -35,7 +41,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Project</a></li>
         <li><a href="#portfolio">Classmaets Websites</a></li>
-        <li><a href="#contact">Contact</a></li>
+
       </ul>
     </div>
   </nav>
@@ -73,22 +79,34 @@
 
 
 
-    <div class="row align-items-center justify-content-center text-center">
+    <!-- <div class="row align-items-center justify-content-center text-center">
       <div>
-        <img src="resources/Images/My project(5).png" id="my-pic" alt="picture">
+        <img src="resources/Images/My project(2).png" id="my-pic" alt="picture">
         <h1>Mohammed Ahmed</h1>
         <hr>
         <h4></h4>
       </div>
+    </div> -->
+    <div class="text-box">
+      <h1>I'm <span class="auto-input"> Mohammed </span> Ahmed</h1>
+      <p><span>I'm working on tyoed.js soon you will see it in this section</span> </p>
+      <a href="#contact">Contact Me</a>
+      <a href="#" class="btn">Download CV</a>
     </div>
+    <img src="resources/Images/My project(5)mo.png" class="user-img">
 
   </div>
+
+
+
+
 
   <div id="about" class="container-fluid">
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-sm-12 picture">
           <img src="https://www.atomix.com.au/media/2015/06/atomix_user31.png" class="rounded-circle" alt="picture">
+          <!-- <img src="resources/Images/My project(5).png" class="rounded-circle" alt="picture"> -->
 
         </div>
         <div class="col-md-9 col-sm-12 offset-md-1">
@@ -309,19 +327,19 @@
   </div>
   <div class="col-lg-4 col-md-6 col-xs-12">
     <a href="https://malekalarmash.com/index.html">
-      <img src="resources/Chalew Deghebo.jpg">
+      <img src="resources/Images/Screenshot (11)2.png">
       <div class="overlay">
         <h3 class="project-title">Malek Alarmash</h3>
     </a>
   </div>
   </div>
   <div class="col-lg-4 col-md-6 col-xs-12">
-    <a href="https://yousefzeitone.com/"></a>
-    <img src="resources/Images/yousef zeitone.jpg">
-    <div class="overlay">
-      <h3 class="project-title">Yousef Zeitone</h3>
-      </a>
-    </div>
+    <a href="https://yousefzeitone.com/">
+      <img src="resources/Images/yousef zeitone.jpg">
+      <div class="overlay">
+        <h3 class="project-title">Yousef Zeitone</h3>
+    </a>
+  </div>
   </div>
   </div>
   </div>
@@ -400,6 +418,9 @@
 
   <footer>
 
+    <!-- <button id="myBtn"><a href="#top" style="color: white">Top</a></button> -->
+
+
     <div class="footer-content">
 
       <div>
@@ -439,5 +460,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#user-img', {
+      strings: ['My strings are: <i>strings</i> with', 'My strings are: <strong>HTML</strong>', 'My strings are: Chars &times; &copy;'],
+      typeSpeed: 0,
+      backSpeed: 0,
+      smartBackspace: true, // this is a default
+      loop: true
+    }); -->
+  </script>
+
 
 </body>

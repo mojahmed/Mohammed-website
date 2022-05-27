@@ -26,6 +26,7 @@ fetch("https://api.github.com/users/mojahmed/repos")
             projectList.appendChild(projectElement);
         }
     })
+
 let today = new Date();
 var thisYear = today.getFullYear();
 
@@ -39,6 +40,15 @@ if (footer) {
     footer.appendChild(copyright);
 
 }
-document.getElementById("my-pic").addEventListener("click", function () {
-    alert("Welcome to my website !");
-});
+// document.getElementById("my-pic").addEventListener("click", function () {
+//     alert("Welcome to my website !");
+// });
+
+
+
+// var typed = new Typed(".user-img", {
+//     Strings: ["Mohammed Ahmed", "new"],
+//     TypeSpeed: 150,
+//     backSpeed: 150,
+//     loop: true
+// })
